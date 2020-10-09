@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  background: #F9F8F3; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif; }
+
+q {
+  quotes: "“" "”" "‘" "’"; }
+
+q:before {
+  content: open-quote; }
+
+q:after {
+  content: close-quote; }
+
+textarea {
+  height: 10rem;
+  resize: vertical; }
+
+.img-circle {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; }
+
+@media print, screen and (min-width: 40em) {
+  body {
+    padding: 15px 100px; } }
+
+p {
+  text-align: left; }
+
+ul {
+  list-style-type: none; }
+
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+footer {
+  clear: both;
+}
+.main-box {
+  padding: 15px;
+  margin-bottom: 5%;
+  position: relative;
+  background-color: white;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 40px 50px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 40px 50px -40px rgba(86, 119, 119, 0.68), 0px 5px 20px rgba(0, 0, 0, 0.1); }
+
+#mainmenu {
+  position: fixed;
+  right: 5px;
+  top: 10rem;
+  margin-top: -150px;
+  font-size: 1.3em;
+  text-align: center;
+  z-index: 2; }
+  #mainmenu .fa {
+    color: #999;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #mainmenu .fa:hover {
+      color: #17BEBB;
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5); }
+
+#cv li {
+  color: #999; }
+
+#contact {
+  background-color: #FDD12D;
+  color: #3E4048; }
+
+#methode {
+  background-color: #1D99B5;
+  color: whitesmoke; }
+  #methode ul {
+    list-style-type: disc; }
+
+#abstract h4 {
+  font-weight: bolder; }
+
+#footer {
+  background-color: rgba(0, 0, 0, 0.88);
+  color: whitesmoke;
+  padding-left: 10px; }
+
+.main-box {
+  border-radius: 5px; }
+
+.wrap-abslolute {
+  position: relative; }
+
+.blurb {
+  width: 220px;
+  margin-left: -20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  border: 1px solid orangered;
+  color: rgba(16, 16, 16, 0.8);
+  font-weight: bold; }
+  .blurb .fa {
+    margin-left: 6px; }
+  .blurb p {
+    margin-bottom: 0; }
+
+.jump-button {
+  background: #23A877;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: bolder;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms; }
+  .jump-button:hover {
+    background: #0A5B3D;
+    -webkit-box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0px, -10px) scale(1.2);
+            transform: translate(0px, -10px) scale(1.2); }
+
+.button-blue {
+  background: #1D99B5; }
+  .button-blue:hover {
+    background: #1547C2; }
+
+@media print, screen and (min-width: 40em) {
+  .blurb {
+    margin-left: -68px; } }
+
+.who {
+  display: inline-block;
+  padding-right: 10px;
+  color: #999; }
+  .who::first-letter {
+    color: rgba(16, 16, 16, 0.8); }
+
+.list-number {
+  counter-reset: my-counter; }
+  .list-number dt, .list-number dd {
+    padding-left: 50px; }
+  .list-number dt {
+    position: relative;
+    font: bold;
+    margin-top: 15px;
+    padding-top: 10px; }
+  .list-number dt:before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: orangered;
+    color: indigo;
+    font: bold 60px/1 Sans-Serif; }
+
+.what {
+  color: rgba(16, 16, 16, 0.8);
+  font-weight: 600;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in; }
+  .what:hover {
+    color: #C32621; }
+
+.headline {
+  color: #0A5590; }
+
+@media print, screen and (min-width: 40em) {
+  .mobile {
+    font-size: 1.5rem; } }
+
+.slide-doc {
+  padding: 2rem 4rem; }
+
+.video {
+  width: 100%;
+  height: auto; }
+
+.face {
+  margin-top: 15px; }
+
+#map {
+  background: #00FFCE; }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }

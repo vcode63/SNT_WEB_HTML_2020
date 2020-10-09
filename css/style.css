@@ -1,0 +1,65 @@
+/* Une feuille de style contient les règles de mise en page
+Elle définit l'aspect des éléments HTML.  */
+
+/* CSS sélectionne les éléments HTML au moyen de sélecteurs */
+
+* {
+    /* Ici sont écrites les règles qui s'applique à tous les éléments
+    du document. Sélecteur racine ou root. */
+    margin: 0; /* une déclaration affecte une valeur à une propriété */
+}
+
+nav {
+    /* Règles s'appliquant  à l'élement "nav" */
+    /* on attribue une valeur à une propriété du style */
+    /* ces sélecteurs sont des sélecteurs de type */
+    color:blue;
+    margin: 25px;
+    /* la propriété margin déjà définie dans le sélecteur
+    universel est modifiée pour les éléments nav du document.
+    La priorité des règles appliquées à un élément dépendent 
+    de la spécificité du sélecteur.
+    C'est le principe de la cascade qui permet d'hériter les propriétés
+    de l'élément parent ou de remplacer une propriété pour un élément spécifique.
+    */
+}
+
+/* Enlever le souligné des liens */
+
+.menu {
+    /* Cette règle s'applique aux éléments ayant une classe "menu" */
+    /* C'est un sélecteur de classe */
+    font-weight: 900;
+}
+
+#accueil {
+    /* Cette règle s'applique à l'élément ayant pour identifiant
+    "accueil"
+    C'est un sélecteur d'identifiant */
+    letter-spacing: 0.3em;
+}
+
+strong, em {
+    /* Lorsque l'on souhaite appliquer une règle à plusieurs éléments
+    on peu les regrouper et séparant les sélecteurs par une virgule 
+    !!! Attention si un des sélecteurs est invalide la règle sera ignorée */
+    font-size: medium;
+    font-weight: bolder;
+}
+
+/* Histoires de famille */
+.menu ul > li {
+    /* Par défaut la  propriété des listes ont la valeur block 
+    Nous souhaitons les avoir en ligne
+    Le signe > signifie que la règle s'applique aux fils li de ul*/
+    display: inline;
+}
+
+footer p {
+    /* Cette règle s'applique aux descedants */
+    color: #06c;
+}
+
+footer > p{
+    margin-left: 15px;
+}

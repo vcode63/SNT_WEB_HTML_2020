@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Code63">
+    <meta name="description" content="Code63 - SNT 2020, Les liens en HTML.
+    Chemin relatifs et absolus">
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel=" stylesheet" href="../css/base.css">
+    <title>Code63 | SNT 2020 | Les liens en HTML</title>
+</head>
+
+<body>
+    <header>
+        <nav id="menu">
+            <ul class="menu">
+                <li><a href="/" id="accueil">Accueil</a></li>
+                <li><a href="01_article.html">HTML</a></li>
+                <li><a href="02_article.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Les liens</h1>
+            <h2>Les chemins relatifs</h2>
+            <aside>
+                <p>
+                    <img src="../img/img1.jpg" alt="maison rouge">
+                </p>
+            </aside>
+            <p>Les chemins sont relatifs à la position du fichier</p>
+            <p>Vérifiez en tapant la touche <kbd>F12</kbd>.</p>
+        </article>
+        <hr>
+        <article>
+            <h1>Les chemins absolus</h1>
+            <aside>
+                <p><img src="/img/img1.jpg" alt="maison rouge"></p>
+                <!-- Ils commencent par "/" ou bien sont une URL de type: protocol://domain-name.tld[/path] -->
+            </aside>
+            <p>Référence pour le développement de sites Web</p>
+            <!-- L'attribut target="_blank" indique au navigateur d'ouvrir un nouvel onglet
+            pour afficher le document référencé dans l'attribut href -->
+            <a href="https://developer.mozilla.org/fr/" target="_blank">Documentation Mozilla MDN</a>
+
+        </article>
+    </main>
+    <footer>
+        <p><a href="#menu">Retour au menu</a></p>
+    </footer>
+</body>
+
+</html>

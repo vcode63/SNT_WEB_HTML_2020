@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Code63">
+    <meta name="description" content="Présentation d'un article en HTML">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Lien vers la feuille de style "style.css" contenue dans le dossier css.
+    Bonne pratique regrouper les styles dans un même dossier.
+    Utilisez des fichiers autant que possible. -->
+    <title>Code63 | SNT 2020 | CSS</title>
+    <style>
+        /* La balise style permet de définir des règles de style pour ce document uniquement.
+        Utilisation non recommandée. */
+        * {
+            background-color: #BFBFBF;
+        }
+
+        main {
+            margin-left: 2em;
+        }
+
+        footer {
+            margin: 12px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            color: #404040
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <!-- Le # indique que l'ont référence un fragment d'URL
+                 c'est à dire une cible interne au document-->
+                <li><a href="/" id="accueil">Accueil</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#photos">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Introduction à CSS</h1>
+            <h2>Cascading Style Sheet</h2>
+            <p>Les feuilles de style permettent de décrire la présentation des éléments HTML</p>
+            <p><em>UTF-8 permet ça: </em>привет!
+                <em>mais aussi: </em> 안녕하세요 !
+            </p>
+            <aside>Je suis un apparté de l'article.</aside>
+            <p><strong>Astuce: pour rafraichir rapidement la page du navigateur
+                    appuyez sur F5.
+                </strong>
+            </p>
+        </article>
+        <article style="border: 2px solid #f8d1d1; margin: 15px;">
+            <!-- Ici nous avons un style définit par l'attribut style de l'élément article.
+             Le style ne s'appliquera qu'à cet élément. Style inline.
+            Uilisation non recommandée !-->
+            <p><q cite="https://blaise-pascal.ent.auvergnerhonealpes.fr/eleves-dys-/informations-contacts/">L'enseignement
+                    devrait être ainsi : celui qui le reçoit le recueille comme un don inestimable mais jamais comme une
+                    contrainte pénible.</q>Albert Einstein, Comment je vois le monde, 1934</p>
+        </article>
+    </main>
+    <aside>
+        Je suis un apparté de la page.
+    </aside>
+    <footer>Je suis un pied de cette page a meilleur style.
+        <p>Je suis le fils de l'élément footer, footer est mon parent direct.</p>
+        <p>Je suis le voisin des éléments qui sont au même niveau que moi.</p>
+        <p>Je suis l'adjacent ou voisin direct du paragraphe de même niveau qui me précède.</p>
+        <div>
+            <p>Je suis un descendant de footer, mais pas le fils.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
